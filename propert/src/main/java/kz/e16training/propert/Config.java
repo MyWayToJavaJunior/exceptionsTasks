@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * Properties, one times load from file.
+ * Properties, one exemplar, one times loading from file.
  *
  */
 public class Config {

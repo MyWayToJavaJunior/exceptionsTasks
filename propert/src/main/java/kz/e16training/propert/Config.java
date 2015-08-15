@@ -1,5 +1,6 @@
 package kz.e16training.propert;
 
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -24,7 +25,7 @@ public class Config {
             throw new PropertiesFileNotFoundException
                     ("File: " + nameOfProperties + ", not found");
         } catch (IOException e) {
-            //catch Configuration Exception right here
+            //catch here
         }
     }
 
@@ -43,7 +44,7 @@ public class Config {
             propValue = (String) properties.get(propKey);
         } else {
             throw new PropertyKeyNotFoundException
-                    ("Property with key: " + propKey + ", not found!");
+                    ("Property with key: " + propKey + ", not found");
         }
         return propValue;
     }

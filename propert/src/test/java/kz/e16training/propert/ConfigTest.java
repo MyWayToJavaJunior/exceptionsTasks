@@ -44,8 +44,9 @@ public class ConfigTest {
         String wrongKey = "key23";
         try {
             config.getProperty(wrongKey);
+            fail("Test key not found " + wrongKey + " should have thrown a PropertiesKeyNotFoundException");
         } catch (PropertyKeyNotFoundException e) {
-            assertEquals("Property with key: " + wrongKey + ", not found!", e.getMessage());
+            assertEquals("Property with key: " + wrongKey + ", not found", e.getMessage());
         }
     }
 

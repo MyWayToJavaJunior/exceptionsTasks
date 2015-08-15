@@ -1,6 +1,7 @@
 package kz.e16training.fileworks;
 
 
+
 /**
  * @author DK
  * @version 1.0.0
@@ -8,6 +9,6 @@ package kz.e16training.fileworks;
  */
 public class Run {
     public static void main(String[] args) {
-  
+
     }
 }
